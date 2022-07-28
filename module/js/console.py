@@ -5,8 +5,15 @@ from .debug import debug
 from .error import error
 from .count import count, countReset
 from .warn import warn
+from .dirxml import dirxml
+from .info import info
 class console:
-  dirxml = info = log = log
+  """
+  Represent the javascript console, not everything is coverred but the most important are !
+  """
+  info = info
+  dirxml = dirxml
+  log = log
   assertt = assertt
   clear = clear
   debug = debug
