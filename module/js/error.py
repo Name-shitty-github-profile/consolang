@@ -1,4 +1,14 @@
 class Error(Exception):
+  """
+  The js error for error handling
+  ```py
+  from consolang import js
+  console = js.console
+  try:
+    console.error("Hello,", "World !")
+  except js.Error:
+    console.log("Error handled !")
+  """
   pass
 
 def error(message: any, *optionalParams):
